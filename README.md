@@ -1,6 +1,6 @@
 # Implementation of useLoaderData, new hook of react-router-dom
 
-## [From reactrouter.com :]("https://reactrouter.com/en/main/hooks/use-loader-data")
+## [From reactrouter.com :](https://reactrouter.com/en/main/hooks/use-loader-data)
 
 ```
 import {
@@ -146,7 +146,7 @@ export default function Pokemon() {
 ```
 
 
-You can see the live [preview]("http://AbdulxaqDev.github.io/React-react-router-pom-useLoaderData").
+You can see the live [preview](http://AbdulxaqDev.github.io/React-react-router-pom-useLoaderData).
 
 
 
