@@ -146,7 +146,7 @@ export default function Pokemon() {
 ```
 
 
-You can see the live [preview](http://AbdulxaqDev.github.io/React-react-router-pom-useLoaderData).
+You can see the live [preview](https://react-react-router-dom-useloaderdata.netlify.app/).
 
 
 
