@@ -2,7 +2,7 @@
 
 ## [From reactrouter.com :](https://reactrouter.com/en/main/hooks/use-loader-data)
 
-```
+```javascript
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,7 +33,7 @@ ReactDOM.createRoot(el).render(
 
 In this project, Pokemon API is used.
 To run project locally: 
-```
+```console
 git clone https://github.com/AbdulxaqDev/React-react-router-pom-useLoaderData.git
 
 cd router-loader
@@ -43,7 +43,7 @@ npm run dev
 
 I used two loaders: 
 1. Pokemon names loader: 
-```
+```javascript
 // ./loaders/PokemonsLoader.jsx
 
 export default async function PokemonsLoader() {
@@ -59,7 +59,7 @@ export default async function PokemonsLoader() {
 
 2. Loader for individual pokemon data based of passed parametr, parametr passed through path of Pakemon.jsx component and this loader called in Pokemon component, so it get passed parametr from App components. Look to App and Pakemon components below.
 
-```
+```javascript
 // ./loaders/PokemonLoader.jsx
 
 export default async function PokemonLoader({params}) {
@@ -78,7 +78,7 @@ export default async function PokemonLoader({params}) {
 
 Loader are passed in Router to components. So it loades (fetchs) before component render.
 
-```
+```javascript
 import { createBrowserRouter } from "react-router-dom";
 import App from "./routes/App";
 import Error from "./routes/Error";
@@ -105,7 +105,7 @@ export default createBrowserRouter([
 
 In App component, useLoaderData() handles passed loader by default and PokemonsLader returns names of pokemons. Then we mapping all names on Link,  <code> to={`pokemon/${pokemon.name}`} </code>:
 
-```
+```javascript
 import React from "react";
 import { Outlet, useLoaderData, Link } from "react-router-dom";
 
@@ -133,7 +133,7 @@ export default function App() {
 
 In Pokemon component, we get every pokemon name and image source url, then render them:
 
-```
+```javascript
 export default function Pokemon() {
  const pokemon = useLoaderData();
  return (
